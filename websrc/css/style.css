@@ -1,0 +1,82 @@
+.bg-custom {
+    background-color: #161b22;
+}
+
+.navbar-dark .navbar-text {
+    color: #cacaca;
+}
+
+.container-fluid {
+    width: unset
+}
+
+.card {
+    background-color: #161b22;
+}
+
+.card-title {
+    color: #cacaca;
+}
+
+.card-text:last-child {
+    color: #ffffff;
+}
+
+.full-bg-dark {
+    background-color: #0d1117;
+}
+
+.err-body {
+    background-color: #26292E;
+    color: #2E2F30;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.err-footer {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    font-size: .6em;
+    color: #fff
+}
+
+.err-dialog {
+    float: right;
+    text-align: left;
+    width: 60%;
+    margin: 5% auto 0;
+}
+
+.err-h1 {
+    font-size: 4em;
+    color: #fff;
+    line-height: 1em;
+}
+
+.err-p {
+    font-size: 1.4em;
+    color: #fff;
+    padding-right: 5%;
+}
+
+.err-image {
+    position: absolute;
+    float: left;
+    top: 0;
+    width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+    .err-image {
+        width: 100%;
+        top: -50px;
+    }
+    .err-dialog {
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin-top: 70%
+    }
+}
