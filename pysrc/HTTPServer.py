@@ -43,8 +43,8 @@ class HTTPServer:
                     self.copyfile(f, self.wfile)
                     f.close()
                 except:
-                    self.path = "/websrc/404.html"
-                    sendRequestedFile(self)
+                    sendHeaderWithResponse(self, 404)
+                    self.wfile.write("oh... big problem!".encode("UTF-8"))
 
             if self.path.endswith("/") or self.path == "":
                 while self.path.endswith("/"):
@@ -59,7 +59,6 @@ class HTTPServer:
                     path = self.translate_path(self.path)
                     f = open(path, 'rb')
                     flines = f.readlines()
-                    f.close()
 
                     output = ""
                     for line in flines:
@@ -84,6 +83,7 @@ class HTTPServer:
                         output += outputLine.decode()
                     sendHeaderWithResponse(self, 200)
                     self.wfile.write(bytes(output, "UTF-8"))
+                    f.close()
                 except:
                     self.path = "/websrc/404.html"
                     sendRequestedFile(self)
@@ -94,8 +94,9 @@ class HTTPServer:
                     if self.path.__contains__(extension):
                         requestAllowed = True
 
-                if requestAllowed:
-                    sendRequestedFile(self)
+                if not requestAllowed:
+                    self.path = "/websrc/404.html"
+                sendRequestedFile(self)
 
     def startserver(self):
         with TCPServer((self.serveraddress, self.port), self.RequestHandler) as httpd:
