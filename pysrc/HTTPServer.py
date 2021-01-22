@@ -64,9 +64,9 @@ class HTTPServer:
                     output = ""
                     for line in flines:
                         outputLine = line
-                        if line.__contains__("%".encode("UTF-8")):
-                            start = line.index("%".encode("UTF-8")) + 1
-                            stop = line.index("%".encode("UTF-8"), start)
+                        if line.count("%%".encode("UTF-8")) == 2: # only try to parse lines with two '%%'
+                            start = line.index("%%".encode("UTF-8")) + 2
+                            stop = line.index("%%".encode("UTF-8"), start)
                             variableToReplace = line.replace(
                                 line[stop:-1], b"").replace(line[0:start], b"").decode().strip()
 
@@ -79,7 +79,7 @@ class HTTPServer:
                                     except:
                                         replaceable = 'ERROR: "%s" is no callable function without arguments or not a primitive!' % variableToReplace
                                 outputLine = line.replace(
-                                    bytes("%" + variableToReplace + "%", "UTF-8"), bytes(replaceable, "UTF-8"))
+                                    bytes("%%" + variableToReplace + "%%", "UTF-8"), bytes(replaceable, "UTF-8"))
 
                         output += outputLine.decode()
                     sendHeaderWithResponse(self, 200)
