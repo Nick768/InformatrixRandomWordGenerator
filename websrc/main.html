@@ -10,25 +10,36 @@
 </head>
 
 <body>
+
+    <style>
+        .navbar-dark .navbar-text {
+            color: rgb(255, 255, 255);
+        }
+
+        .container-fluid {
+            width: unset
+        }
+    </style>
+
     <nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
-            <span class="navbar-text">
+            <span class="navbar-text" >
                 Informatrix Random Word Generator
             </span>
         </div>
     </nav>
 
-    <div class="card container-fluid" style="width: 18rem;">
+    <div class="card container-fluid" style="width: 18rem; margin-top: 10px;">
         <div class="card-body">
-            <h5 class="card-title">%currentWord%</h5>
-            <p class="card-text">%currentHelpWord%</p>
+            <h5 class="card-title">%%currentWord%%</h5>
+            <p class="card-text">%%currentHelpWord%%</p>
         </div>
     </div>
-    
-    <div class="card container-fluid" style="width: 18rem;">
+
+    <div class="card container-fluid" style="width: 18rem; margin-top: 10px;">
         <div class="card-body">
-            <h5 class="card-title">%nextWord%</h5>
-            <p class="card-text">%currentHelpWord%</p>
+            <h5 class="card-title">%%nextWord%%</h5>
+            <p class="card-text">%%currentHelpWord%%</p>
         </div>
     </div>
 </body>
