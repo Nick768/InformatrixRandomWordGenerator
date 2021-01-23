@@ -1,5 +1,6 @@
 from os import getcwd
 from random import shuffle
+from .PathManager import *
 
 def createList():                                                                                             
     try:                         
@@ -7,7 +8,7 @@ def createList():
         file = open(getcwd() + '/WordList.txt', 'r')
         lines = file.readlines()
         for line in lines:
-            list.append(line.replace('\\n', '').split(','))
+            list.append(line.replace('\n', '').split(','))
         file.close()
         shuffle(list)
         return list
@@ -25,17 +26,27 @@ def getCurrentWord():
         return "Kein weiteres Wort vorhanden!"
 
 def getCurrentHelpWord():
+    global helpWordIndex
     try:
         if list[wordIndex].__len__() > 1:
-            return list[wordIndex][helpWordIndex]
+            helpWordIndex += 1
+            return list[wordIndex][helpWordIndex - 1]
         return "Kein Hilfswort vorhanden!"
     except:
         return "Kein Hilfswort vorhanden!"
 
 def getNextWord():
-    global wordIndex
-    wordIndex += 1
-    try:
-        return getCurrentWord()
-    except:
-        return "Kein weiteres Wort vorhanden!"
+    from .HTTPServer import requestedPath
+    global wordIndex, helpWordIndex
+    if requestedPath == "/nextWord/":
+        wordIndex += 1
+        helpWordIndex = 1
+    return ""
+
+def startNewRound():
+    from .HTTPServer import requestedPath
+    global wordIndex, helpWordIndex
+    if requestedPath == "/newRound/":
+        wordIndex = 0
+        helpWordIndex = 1
+    return ""
