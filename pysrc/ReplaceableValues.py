@@ -1,6 +1,7 @@
 from .ListManager import *
 from .HTMLManager import *
 
+
 class ReplaceableValues:
     currentWord = getCurrentWord
     currentHelpWord = getCurrentHelpWord
