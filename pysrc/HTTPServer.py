@@ -8,21 +8,11 @@ requestedPath = str
 
 
 class HTTPServer:
-    serveraddress = "127.0.0.1"
-    port = 8080
-
-    allowedFileExtensions = [
-        ".js",
-        ".css",
-        ".png",
-        ".svg",
-        ".jpg",
-        ".css",
-        ".ico"
-    ]
 
     class RequestHandler(SimpleHTTPRequestHandler):
         def do_GET(self):
+            from Main import allowedFileExtensions
+            
             global requestedPath
             requestedPath = self.path
 
@@ -107,7 +97,7 @@ class HTTPServer:
 
             else:
                 requestAllowed = False
-                for extension in HTTPServer.allowedFileExtensions:
+                for extension in allowedFileExtensions:
                     if self.path.__contains__(extension):
                         requestAllowed = True
 
@@ -116,10 +106,12 @@ class HTTPServer:
                 sendRequestedFile(self)
 
     def startserver(self):
-        with TCPServer((self.serveraddress, self.port), self.RequestHandler) as httpd:
+        from Main import serveraddress, port
+
+        with TCPServer((serveraddress, port), self.RequestHandler) as httpd:
             try:
                 print("Server started: %s:%s" %
-                      (self.serveraddress, self.port))
+                      (serveraddress, port))
                 httpd.serve_forever()
             except KeyboardInterrupt:
                 pass
