@@ -1,7 +1,7 @@
 Informatrix Random Word Generator
 ===
 
-## How to use?
+### How to use?
 * Clone this repository or download the sourcecode as zip file
 * Navigate to the cloned directory (or extract the zip file and navigate to this directory)
 * Start the Main.py as you would start every Python 3 file or start one of the start scripts fitting your OS
