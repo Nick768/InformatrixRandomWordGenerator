@@ -41,9 +41,13 @@ class HTTPServer:
                     self.copyfile(f, self.wfile)
                     f.close()
                 except:
-                    sendHeaderWithResponse(self, 404)
-                    self.wfile.write(
-                        "Housten, we have a problem!".encode("UTF-8"))
+                    if response == 404:
+                        sendHeaderWithResponse(self, 404)
+                        self.wfile.write(
+                            "Housten, we have a problem!".encode("UTF-8"))
+                    else:
+                        self.path = "/websrc/404.html"
+                        sendRequestedFile(self)
 
             def replaceHTMLVars(file_or_str):
                 if type(file_or_str) == str:
@@ -98,7 +102,7 @@ class HTTPServer:
             else:
                 requestAllowed = False
                 for extension in allowedFileExtensions:
-                    if self.path.__contains__(extension):
+                    if self.path.endswith(extension):
                         requestAllowed = True
 
                 if not requestAllowed:
