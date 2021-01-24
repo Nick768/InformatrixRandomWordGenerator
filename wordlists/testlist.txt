@@ -7,3 +7,4 @@ Test6
 Test7,Hilfe4,Hilfe5,Hilfe6
 Test8,Hilfe7
 Test9,Hilfe8,Hilfe9,Hilfe10,Hilfe11
+äöüß
