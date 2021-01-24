@@ -6,6 +6,7 @@ from .ReplaceableValues import ReplaceableValues
 
 requestedPath = str
 
+
 class HTTPServer:
     serveraddress = "127.0.0.1"
     port = 8080
@@ -51,7 +52,8 @@ class HTTPServer:
                     f.close()
                 except:
                     sendHeaderWithResponse(self, 404)
-                    self.wfile.write("Housten, we have a problem!".encode("UTF-8"))
+                    self.wfile.write(
+                        "Housten, we have a problem!".encode("UTF-8"))
 
             def replaceHTMLVars(file_or_str):
                 if type(file_or_str) == str:
@@ -61,7 +63,8 @@ class HTTPServer:
                 output = ""
                 for line in flines:
                     outputLine = line
-                    if line.count("%%".encode("UTF-8")) == 2: # only try to parse lines with two '%%'
+                    # only try to parse lines with two '%%'
+                    if line.count("%%".encode("UTF-8")) == 2:
                         start = line.index("%%".encode("UTF-8")) + 2
                         stop = line.index("%%".encode("UTF-8"), start)
                         variableToReplace = line.replace(
