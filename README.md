@@ -11,10 +11,10 @@
 
 #### How to use on Android?
 
--   install Termux
+-   install Termux (search for it on Google Play or fdroid)
 -   run these commands:
     ```bash
-    apt update && apt uupgrade && apt install python git
+    apt update && apt upgrade && apt install python git
     git clone https://github.com/Nick768/InformatrixRandomWordGenerator
     cd InformatrixRandomWordGenerator/
     python Main.py
