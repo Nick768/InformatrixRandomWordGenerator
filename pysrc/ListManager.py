@@ -35,9 +35,9 @@ def getCurrentHelpWord():
         if list[wordIndex].__len__() > 1:
             helpWordIndex += 1
             return list[wordIndex][helpWordIndex - 1]
-        return "Kein Hilfswort vorhanden!"
     except:
-        return "Kein Hilfswort vorhanden!"
+        pass
+    return "Kein Hilfswort vorhanden!"
 
 
 def getNextWord():
