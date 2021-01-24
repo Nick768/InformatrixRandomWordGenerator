@@ -109,10 +109,10 @@ class HTTPServer:
                     self.path = "/websrc/404.html"
                 sendRequestedFile(self)
 
-    def startserver(self):
+    def startserver(RequestHandler):
         from Main import serveradress, port
 
-        with TCPServer((serveradress, port), self.RequestHandler) as httpd:
+        with TCPServer((serveradress, port), RequestHandler) as httpd:
             try:
                 print("Server started: %s:%s" %
                       (serveradress, port))

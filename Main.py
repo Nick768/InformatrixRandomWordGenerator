@@ -16,4 +16,6 @@ allowedFileExtensions = [
     ".xml"
 ]
 
-HTTPServer.startserver(HTTPServer)
+
+if __name__ == "__main__":
+    HTTPServer.startserver(HTTPServer.RequestHandler)
