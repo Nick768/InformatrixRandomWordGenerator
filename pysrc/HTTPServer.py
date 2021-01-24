@@ -12,7 +12,7 @@ class HTTPServer:
     class RequestHandler(SimpleHTTPRequestHandler):
         def do_GET(self):
             from Main import allowedFileExtensions
-            
+
             global requestedPath
             requestedPath = self.path
 
@@ -106,12 +106,12 @@ class HTTPServer:
                 sendRequestedFile(self)
 
     def startserver(self):
-        from Main import serveraddress, port
+        from Main import serveradress, port
 
-        with TCPServer((serveraddress, port), self.RequestHandler) as httpd:
+        with TCPServer((serveradress, port), self.RequestHandler) as httpd:
             try:
                 print("Server started: %s:%s" %
-                      (serveraddress, port))
+                      (serveradress, port))
                 httpd.serve_forever()
             except KeyboardInterrupt:
                 pass
