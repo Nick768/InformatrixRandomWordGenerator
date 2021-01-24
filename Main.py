@@ -11,7 +11,8 @@ allowedFileExtensions = [
     ".jpg",
     ".css",
     ".ico",
-    ".json"
+    ".json",
+    ".xml"
 ]
 
 HTTPServer.startserver(HTTPServer)
