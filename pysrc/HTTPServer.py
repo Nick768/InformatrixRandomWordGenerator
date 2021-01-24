@@ -72,8 +72,11 @@ class HTTPServer:
                                     replaceable = replaceable()
                                 except:
                                     replaceable = 'ERROR: "%s" is no callable function without arguments or not a primitive or does contain errors!' % variableToReplace
-                            outputLine = line.replace(
-                                bytes("%%" + variableToReplace + "%%", "UTF-8"), bytes(replaceable, "UTF-8"))
+                            if replaceable.strip("\t ") == "\r\n" or replaceable.strip("\t ") == "\n" or replaceable.strip("\t ") == "\r" or replaceable.strip("\t ") == "":
+                                outputLine = b""
+                            else:
+                                outputLine = line.replace(
+                                    bytes("%%" + variableToReplace + "%%", "UTF-8"), bytes(replaceable, "UTF-8"))
 
                     output += outputLine.decode()
                 if output.__contains__("%%"):
