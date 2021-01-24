@@ -1,6 +1,6 @@
 from pysrc.HTTPServer import HTTPServer
 
-serveraddress = "127.0.0.1"
+serveradress = "localhost"
 port = 8080
 
 allowedFileExtensions = [
