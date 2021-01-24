@@ -4,7 +4,7 @@ from os import curdir, pardir, getcwd
 from os.path import dirname, join
 
 
-def translate_path_for_html_loading(path):
+def translate_path_for_loading(path):
     path = path.split('?', 1)[0]
     path = path.split('#', 1)[0]
     trailing_slash = path.rstrip().endswith('/')

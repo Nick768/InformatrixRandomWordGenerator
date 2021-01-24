@@ -14,7 +14,7 @@ def getContentOfHTML():
     from .HTTPServer import requestedPath
     if requestedPath != "/" and requestedPath != "/newRound/":
         try:
-            path = translate_path_for_html_loading(
+            path = translate_path_for_loading(
                 "/websrc/" + requestedPath) + ".html"
             return loadFile(path)
         except:
@@ -26,7 +26,7 @@ def showNewRoundButton():
     from .ListManager import getCurrentWord
     if "Kein weiteres Wort vorhanden!" == getCurrentWord():
         try:
-            path = translate_path_for_html_loading("/websrc/newRound.html")
+            path = translate_path_for_loading("/websrc/newRound.html")
             return loadFile(path)
         except:
             pass

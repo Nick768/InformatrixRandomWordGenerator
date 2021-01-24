@@ -5,7 +5,7 @@ from .PathManager import *
 def createList():
     try:
         list = []
-        file = open(translate_path_for_html_loading("/wordlists/testlist.txt"), 'r')
+        file = open(translate_path_for_loading("/wordlists/testlist.txt"), 'r')
         lines = file.readlines()
         for line in lines:
             list.append(line.replace('\n', '').split(','))
