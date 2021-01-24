@@ -51,8 +51,9 @@ def getNextWord():
 
 def startNewRound():
     from .HTTPServer import requestedPath
-    global wordIndex, helpWordIndex
+    global wordIndex, helpWordIndex, list
     if requestedPath == "/newRound/":
         wordIndex = 0
         helpWordIndex = 1
+        shuffle(list)
     return ""
