@@ -126,7 +126,7 @@ class HTTPServer:
                         from os import system # yes, I could use the webbrowser library
                                               # but on Windows it opens up IE or Edge :(
                         if osname() == "Linux":
-                            system('xdg-open "" http://%s:%s' % (serveraddress, port))
+                            system('xdg-open http://%s:%s' % (serveraddress, port))
                         elif osname() == "Darwin":
                             system('open "" http://%s:%s' % (serveraddress, port))
                         elif osname() == "Windows":
