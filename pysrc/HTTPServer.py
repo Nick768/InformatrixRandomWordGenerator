@@ -114,12 +114,12 @@ class HTTPServer:
                 sendRequestedFile(self)
 
     def startserver(RequestHandler):
-        from Main import serveradress, port
+        from Main import serveraddress, port
 
-        with TCPServer((serveradress, port), RequestHandler) as httpd:
+        with TCPServer((serveraddress, port), RequestHandler) as httpd:
             try:
                 print("Server started: %s:%s" %
-                      (serveradress, port))
+                      (serveraddress, port))
                 httpd.serve_forever()
             except KeyboardInterrupt:
                 pass

@@ -1,7 +1,7 @@
 from pysrc.HTTPServer import HTTPServer
 
 # enter your local IP to be able to connect other devices in the same network
-serveradress = "localhost"
+serveraddress = "localhost"
 port = 8080
 
 isDevelopmentVersion = True
