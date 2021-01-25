@@ -4,6 +4,8 @@ from pysrc.HTTPServer import HTTPServer
 serveradress = "localhost"
 port = 8080
 
+isDevelopmentVersion = True
+
 allowedRequestableFileExtensions = [
     ".js", ".css", ".png",
     ".svg", ".jpg", ".css",

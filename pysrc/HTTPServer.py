@@ -11,7 +11,7 @@ class HTTPServer:
 
     class RequestHandler(SimpleHTTPRequestHandler):
         def do_GET(self):
-            from Main import allowedRequestableFileExtensions
+            from Main import allowedRequestableFileExtensions, isDevelopmentVersion
 
             global requestedPath
             requestedPath = self.path
@@ -71,7 +71,10 @@ class HTTPServer:
                                 try:
                                     replaceable = replaceable()
                                 except:
-                                    replaceable = 'ERROR: "%s" is no callable function without arguments or not a primitive or does contain errors!' % variableToReplace
+                                    if isDevelopmentVersion:
+                                        replaceable = 'ERROR: "%s" is no callable function without arguments or not a primitive or does contain errors!' % variableToReplace
+                                    else:
+                                        replaceable = ""
                             if replaceable.strip("\t ") == "\r\n" or replaceable.strip("\t ") == "\n" or replaceable.strip("\t ") == "\r" or replaceable.strip("\t ") == "":
                                 outputLine = b""
                             else:
