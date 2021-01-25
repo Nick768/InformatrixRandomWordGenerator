@@ -5,15 +5,9 @@ serveradress = "localhost"
 port = 8080
 
 allowedFileExtensions = [
-    ".js",
-    ".css",
-    ".png",
-    ".svg",
-    ".jpg",
-    ".css",
-    ".ico",
-    ".json",
-    ".xml"
+    ".js", ".css", ".png",
+    ".svg", ".jpg", ".css",
+    ".json", ".ico", ".xml"
 ]
 
 
