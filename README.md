@@ -9,6 +9,14 @@
 -   open your browser and open the given url (in our example it is `localhost:8080`)
 -   That's it!
 
+#### Hint
+If you want your browser to start automatically and go to the url you have to set
+```python
+isDevelopmentVersion = False
+```
+in Main.py
+(doesn't work on Android)
+
 #### How to use on Android?
 
 -   install Termux (search for it on Google Play or fdroid)
