@@ -4,6 +4,8 @@ from pysrc.HTTPServer import HTTPServer
 serveraddress = "localhost"
 port = 8080
 
+# set this to False if you don't want to get debugging messages
+# if it's set to True, your browser doesn't start up automatically!
 isDevelopmentVersion = True
 
 allowedRequestableFileExtensions = [
