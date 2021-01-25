@@ -11,7 +11,7 @@ class HTTPServer:
 
     class RequestHandler(SimpleHTTPRequestHandler):
         def do_GET(self):
-            from Main import allowedFileExtensions
+            from Main import allowedRequestableFileExtensions
 
             global requestedPath
             requestedPath = self.path
@@ -101,7 +101,7 @@ class HTTPServer:
 
             else:
                 requestAllowed = False
-                for extension in allowedFileExtensions:
+                for extension in allowedRequestableFileExtensions:
                     if self.path.endswith(extension):
                         requestAllowed = True
                         break
