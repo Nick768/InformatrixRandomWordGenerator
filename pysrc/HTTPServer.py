@@ -123,7 +123,8 @@ class HTTPServer:
                       (serveraddress, port))
                 if not isDevelopmentVersion:
                     try:
-                        from os import system
+                        from os import system # yes, I could use the webbrowser library
+                                              # but on Windows it opens up IE or Edge :(
                         if osname() == "Linux":
                             system('xdg-open "" http://%s:%s' % (serveraddress, port))
                         elif osname() == "Darwin":
