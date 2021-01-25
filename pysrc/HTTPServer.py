@@ -86,9 +86,6 @@ class HTTPServer:
             ##### << Functions #####
 
             if self.path.endswith("/") or self.path == "":
-                while self.path.endswith("/"):
-                    self.path = self.path[0:-1]
-
                 self.path = "/websrc/main.html"
 
                 try:
@@ -107,6 +104,7 @@ class HTTPServer:
                 for extension in allowedFileExtensions:
                     if self.path.endswith(extension):
                         requestAllowed = True
+                        break
 
                 if not requestAllowed:
                     self.path = "/websrc/404.html"
