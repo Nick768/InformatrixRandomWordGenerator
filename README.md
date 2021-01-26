@@ -31,5 +31,5 @@ in Main.py
 
 ---
 
-If you want/need a java version, please have a lokk at:
+If you want/need a java version, please have a look at:
 https://github.com/Nick768/InformatrixRandomWordGenerator-Java
