@@ -1,7 +1,6 @@
 from http.server import SimpleHTTPRequestHandler
 from io import BytesIO
 from os import fstat
-from platform import system as osname
 from socketserver import TCPServer
 from .ReplaceableValues import ReplaceableValues
 
@@ -115,28 +114,12 @@ class HTTPServer:
                 sendRequestedFile(self)
 
     def startserver(RequestHandler):
-        from Main import serveraddress, port, isDevelopmentVersion
+        from Main import serveraddress, port
 
         with TCPServer((serveraddress, port), RequestHandler) as httpd:
             try:
                 print("Server started: %s:%s" %
                       (serveraddress, port))
-                if not isDevelopmentVersion:
-                    try:
-                        from os import system # yes, I could use the webbrowser library
-                                              # but on Windows it opens up IE or Edge :(
-                        if osname() == "Linux":
-                            system('xdg-open http://%s:%s' % (serveraddress, port))
-                        elif osname() == "Darwin":
-                            system('open "" http://%s:%s' % (serveraddress, port))
-                        elif osname() == "Windows":
-                            system('start "" http://%s:%s' % (serveraddress, port))
-                        else:
-                            print("Can't open your browser automatically.")
-                            print("Your OS isn't supported!")
-                    except:
-                        print("Can't open your browser automatically.")
-                        print("Maybe your OS isn't supported or you don't have a browser!")
                 httpd.serve_forever()
             except KeyboardInterrupt:
                 pass
