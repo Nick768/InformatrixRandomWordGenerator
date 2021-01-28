@@ -28,3 +28,8 @@ in Main.py
     python Main.py
     ```
 -   open your browser and navigate to the given url (see instructions above)
+
+---
+
+If you want/need a java version, please have a look at:
+https://github.com/Nick768/InformatrixRandomWordGenerator-Java
