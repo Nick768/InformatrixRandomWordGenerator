@@ -20,7 +20,7 @@ if __name__ == "__main__":
     if not isDevelopmentVersion:
         try:
             from os import system  # yes, I could use the webbrowser library
-            # but on Windows it opens up IE or Edge :(
+                                   # but on Windows it opens up IE or Edge :(
             if osname() == "Linux":
                 system('xdg-open http://%s:%s &> /dev/null' %
                        (serveraddress, port))
