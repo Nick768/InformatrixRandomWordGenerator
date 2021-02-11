@@ -8,11 +8,16 @@
     <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/websrc/images/favicon/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/websrc/images/favicon/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/websrc/images/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/websrc/images/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/websrc/images/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/websrc/images/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/websrc/images/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/websrc/images/favicon/apple-icon-180x180.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114"
+        href="/websrc/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120"
+        href="/websrc/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144"
+        href="/websrc/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152"
+        href="/websrc/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
+        href="/websrc/images/favicon/apple-icon-180x180.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/websrc/images/favicon/android-icon-192x192.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/websrc/images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/websrc/images/favicon/favicon-96x96.png" />
@@ -37,16 +42,19 @@
         </div>
     </nav>
 
-    <div class="card container-fluid" style="width: 18rem; margin-top: 2.3148vh">
-        <div class="card-body" style="text-align: center">
-            <h5 class="card-title">Erkläre dieses Wort:</h5>
-            <p class="card-text">%%currentWord%%</p>
+    <div class="container-fluid" style="text-align: -webkit-center;">
+        <div class="card" style="width: 25rem; margin-top: 2.3148vh; margin-bottom: 5.5556vh;">
+            <div class="card-body" style="text-align: center">
+                <h5 class="card-title">Erkläre dieses Wort:</h5>
+                <p class="card-text"><h1 style="color: #fff;">%%currentWord%%</h1></p>
+            </div>
         </div>
-        <a href="/help/" type="button" class="btn btn-dark" style="margin-bottom: 1.3889vh">Zeige Hilfswort an</a>
-        <a href="/nextWord/" type="button" class="btn btn-dark" style="margin-bottom: 1.3889vh">Nächstes Wort</a>
+        <a href="/nextWord/" type="button" class="btn btn-dark" style="margin-top: 1.3889vh; margin-right: 0.6481vh;">Nächstes Wort</a>
+        <a href="/help/" type="button" class="btn btn-dark" style="margin-top: 1.3889vh">Zeige Hilfswort an</a>
+        <br/>
         %%newRoundButton%%
+        %%contentOfHTML%%
     </div>
-    %%contentOfHTML%%
 </body>
 
 </html>

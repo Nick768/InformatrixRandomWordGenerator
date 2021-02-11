@@ -11,6 +11,10 @@
     width: unset;
 }
 
+.btn-dark {
+    width: 21vh;
+}
+
 .card {
     background-color: #161b22;
 }
