@@ -8,7 +8,8 @@ def createList():
         file = open(translate_path_for_loading("/wordlists/testlist.txt"), 'rb')
         lines = file.readlines()
         for line in lines:
-            list.append(line.decode().replace('\n', '').split(','))
+            if not line.strip(b" \r\n\t") == b"" and not line.startswith(b"::"):
+                list.append(line.decode().replace('\n', '').strip(" \r\n\t").split(sep=";;"))
         file.close()
         shuffle(list)
         return list
@@ -31,7 +32,7 @@ def getCurrentWord():
 def getCurrentHelpWord():
     global helpWordIndex
     try:
-        if list[wordIndex].__len__() > 1:
+        if len(list[wordIndex]) > 1:
             helpWordIndex += 1
             return list[wordIndex][helpWordIndex - 1]
     except:
