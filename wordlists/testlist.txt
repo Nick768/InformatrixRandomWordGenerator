@@ -1,10 +1,46 @@
-Test1,Hilfe1
-Test2
-Test3
-Test4,Hilfe2,Hilfe3
-Test5
-Test6
-Test7,Hilfe4,Hilfe5,Hilfe6
-Test8,Hilfe7
-Test9,Hilfe8,Hilfe9,Hilfe10,Hilfe11
-äöüß
+:: VORLESUNG 2
+VL02 Soziale Kognition: Retrospektive Irrtümer;; Auswirkungen von Schemata
+VL02 Soziale Kognition: Priming;; Was man direkt vor dem Ereignis gedacht hat verstärkt die Verfügbarkeit einens Schemas
+VL02 Soziale Kognition: Heuristiken;; Es gibt 4 unterschiedliche Arten (Anpassungsheuristik...)
+VL02 Soziale Kognition: Selbsterfüllende Prophezeihung;; gehört zu den Biases
+VL02 Soziale Kognition: Monitoring-/Operator-Prozesse (Wegner 1994);; Zur Unterdrückung unerwünschter Gedanken - bei Überlastung kippt es ins Gegenteil = monitor weiter aktiv/operator nicht
+
+:: VORLESUNG 3
+VL03 Soziale Perzeption: Internale/Externale Attribution (Heider 1958);; Menschen haben eine Vorliebe für die internale Attribution ("wissenschaftlicher Laie")
+VL03 Soziale Perzeption: Konsensus/Distinktheit/Konsistenz;; Kovariationsprinzip nach Kelly ("Meisterdetektiv")
+VL03 Soziale Perzeption: Fundamentaler Attributionsfehler (Ross);; Tendenz Verhalten anderer zu erklären: Persönlichkeit > sozialer Einfluss;;Hilfe5;;Hilfe6
+VL03 Soziale Perzeption: zentrale/periphere eigenschaften;; intelligent - geschickt - WARMHERZIG/KALTHERZIG - entschlossen - fleißig
+
+:: VORLESUNG 4
+VL04 Stereotype/Vorurteile: Voraus bestehen Vorurteile? ;; = Affektiv (Vorurteil)/ Kognitiv (Stereotyp)/ Verhalten (Diskriminierung)
+VL04 Stereotype/Vorurteile: Ultimativer Attributionsfehler (=Bsp. einer Ursache von Vorurteilen);; Fundamentale Attributionsfehler wird auf ganze Gruppe übertragen
+VL04 Stereotype/Vorurteile: Stereotype Threat;; Besorgnis von Minderheiten - dass ihr Verhalten ein Stereotyp bestätigt = erhöhter kognit. Druck!
+VL04 Stereotype/Vorurteile: Wie kann der Abbau von Stereotypen/Vorurteilen durch Kontakt gelingen? (insg. 6 Bedingungen);; vor allem: Menschen mit gleichem Status + gemeinsame Ziele
+VL04 Stereotype/Vorurteile: Was für Vorteile hat eine "Jigsaw-Klasse"?;; Grenzen zw. Eigen-/Fremdgruppe werden niedergerissen + Dissonanzreduktion
+
+:: VORLESUNG 5
+VL05 Interpersonale Attraktion: Welche Bedingungen gibt es für gegenseitige Anziehung?;; Nähe(Vertrautheit/Mere exposure) - Ähnlichkeit - Reziproke Zuneigung - Attraktivität - Emotion - Sozialer Austausch
+VL05 Interpersonale Attraktion: Bindungsstile;; sicherer/vermeidender/ängstlich-ambivalenter
+VL05 Interpersonale Attraktion:
+VL05 Interpersonale Attraktion:
+
+:: VORLESUNG 6
+VL06 Einstellung: Je stärker die Einstellung - desto...(Fazio 2000);; ...restistnter gegebüber Veränderung + konsistenter ist Einstll. mit Verhalten
+VL06 Einstellung: Balancetheorie (Heider 1946);; bei nicht balancierter Einstellung = Einstellungsänderung
+VL06 Einstellung: Kognitive Dissonanztheorie (Festinger 1997);; Einstellung/Verhalten wird so verändert - dass beide konsistent sind
+VL06 Einstellung: Persuasive Kommunikation: Man ist überzeugend wenn...:(Bezogen auf Yale-Studie);; Bsp.: Sender = fachkundig + attraktiv;; Mitteilung = zweiseitige Botschaft - primacy Effect - recency effect;; Zuhörerschaft = abgelenkt - niedrige Intelligenz - mit durchschnittlichem Selbstwert
+
+:: VORLESUNG 7
+VL07 Selbst:
+
+:: VORLESUNG 8
+VL08 Konformität:
+
+:: VORLESUNG 9
+VL09 Gruppenprozesse:
+
+:: VORLESUNG 10
+VL10 Prosziales Verhalten:
+
+:: VORLESUNG 11
+VL11 Übertragung SozPsy / auf medienpsychol. Phänomene:
