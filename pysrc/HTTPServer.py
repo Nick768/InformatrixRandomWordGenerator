@@ -11,7 +11,7 @@ class HTTPServer:
 
     class RequestHandler(SimpleHTTPRequestHandler):
         def do_GET(self):
-            from Main import allowedRequestableFileExtensions, isDevelopmentVersion
+            from Main import allowedRequestableFileExtensions
 
             global requestedPath
             requestedPath = self.path
