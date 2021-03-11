@@ -13,7 +13,7 @@ def createList():
         file.close()
         shuffle(list)
         return list
-    except:
+    except FileNotFoundError:
         return [["Keine Liste vorhanden!"]]
 
 
@@ -25,7 +25,7 @@ helpWordIndex = 1
 def getCurrentWord():
     try:
         return list[wordIndex][0]
-    except:
+    except IndexError:
         return "Kein weiteres Wort vorhanden!"
 
 
@@ -35,7 +35,7 @@ def getCurrentHelpWord():
         if len(list[wordIndex]) > 1:
             helpWordIndex += 1
             return list[wordIndex][helpWordIndex - 1]
-    except:
+    except IndexError:
         pass
     return "Kein Hilfswort vorhanden!"
 

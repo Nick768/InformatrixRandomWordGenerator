@@ -24,7 +24,7 @@ class HTTPServer:
                     "Content-type", self.guess_type(self.translate_path(self.path)))
                 try:
                     self.send_header("Content-Length", str(self.fs[6]))
-                except:
+                except AttributeError:
                     pass
                 self.end_headers()
 
@@ -40,7 +40,7 @@ class HTTPServer:
                     sendHeaderWithResponse(self, response)
                     self.copyfile(f, self.wfile)
                     f.close()
-                except:
+                except FileNotFoundError:
                     if response == 404:
                         sendHeaderWithResponse(self, 404)
                         self.wfile.write(
@@ -70,16 +70,23 @@ class HTTPServer:
                             if str(type(replaceable)) == "<class 'function'>":
                                 try:
                                     replaceable = replaceable()
-                                except:
-                                    if isDevelopmentVersion:
-                                        replaceable = 'ERROR: "%s" is no callable function without arguments or not a primitive or does contain errors!' % variableToReplace
-                                    else:
-                                        replaceable = ""
-                            if replaceable.strip("\t ") == "\r\n" or replaceable.strip("\t ") == "\n" or replaceable.strip("\t ") == "\r" or replaceable.strip("\t ") == "":
-                                outputLine = b""
-                            else:
-                                outputLine = line.replace(
-                                    bytes("%%" + variableToReplace + "%%", "UTF-8"), bytes(replaceable, "UTF-8"))
+                                    if type(replaceable) != str and replaceable != 404:
+                                        return 'ERROR: "%s" does not return a string!' % variableToReplace
+                                    elif replaceable == 404:
+                                        return
+                                except TypeError:
+                                    return 'ERROR: "%s" is no function without arguments!' % variableToReplace
+
+                            try:
+                                if replaceable.strip("\t ") == "\r\n" or replaceable.strip("\t ") == "\n" or replaceable.strip("\t ") == "\r" or replaceable.strip("\t ") == "":
+                                    outputLine = b""
+                                else:
+                                    outputLine = line.replace(
+                                        bytes("%%" + variableToReplace + "%%", "UTF-8"), bytes(replaceable, "UTF-8"))
+                            except AttributeError:
+                                return
+                        else:
+                            return 'ERROR: "%s" is no callable function!' % variableToReplace
 
                     output += outputLine.decode()
                 if output.__contains__("%%"):
@@ -95,10 +102,13 @@ class HTTPServer:
                     path = self.translate_path(self.path)
                     f = open(path, 'rb')
                     output = replaceHTMLVars(f)
-                    sendHeaderWithResponse(self, 200)
-                    self.wfile.write(bytes(output, "UTF-8"))
                     f.close()
-                except:
+                    if output != None:
+                        sendHeaderWithResponse(self, 200)
+                    else:
+                        raise FileNotFoundError
+                    self.wfile.write(bytes(output, "UTF-8"))
+                except FileNotFoundError:
                     self.path = "/websrc/404.html"
                     sendRequestedFile(self)
 
