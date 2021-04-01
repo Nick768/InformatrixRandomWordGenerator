@@ -33,7 +33,7 @@ VL06 Einstellung: Persuasive Kommunikation: Man ist überzeugend wenn...:(Bezoge
 
 :: VORLESUNG 7
 VL07 Selbst/-rechtfertigung/-wert: Emotionale Funktion des Selbst;; Steuerung emotionaler Reatkionen beim Vergleich von tatsächlichem-, Ideal-, Soll-Selbst
-VL07 Selbst/-rechtfertigung/-wert: Selbst ist wie ein Muskel - Baumeister et al. 2000,, Selbst wird beeinfluss von: Müdigkeit, regelmäßiges Training(Kräftigung), Verbraucht Energie bei Selbstkontrolle ("Versuch bei Komödie nicht zu lachen!")
+VL07 Selbst/-rechtfertigung/-wert: Selbst ist wie ein Muskel - Baumeister et al. 2000;; Selbst wird beeinfluss von: Müdigkeit, regelmäßiges Training(Kräftigung), Verbraucht Energie bei Selbstkontrolle ("Versuch bei Komödie nicht zu lachen!")
 VL07 Selbst/-rechtfertigung/-wert: Was ist der Unterschied zw. unabhängiger- und interdependente Selbstsicht?;; Unabhängige= man stütz sich auf die eigenen Gedanken,Gefühle, Handlungen;; interdependetent= definiert sich selbst auf Basis der Gefühle, Gedankne, Hanldungen anderer Menschen(vgl. kollektivistische Kulturen):
 VL07 Selbst/-rechtfertigung/-wert: Studie-"Hängebrücke" (Dutton & Aron 1974);; Zwei-Faktoren-Theorie (Schachter 1964) - 2 Widerstreitende Auffassungen - Wir beobachten unser Verhalten direkt und begründen damit unseren Zustand oder...;; ...wir beobachten erst unseren physiologischen Erregungszustand und suchen dann nach situationsbedingte Infos, um Ursache des Verhaltens zu finden
 VL07 Selbst/-rechtfertigung/-wert: Effekt der Überrechtfertigung (Deci et al. 1999);; In der Selbstwarhnehmung werden extrinsische Gründe überschätzt und intrinsische unterschätzt;; Bsp.: Tochter soll besser Klavierspielen lernen und bekommt jedes mal 1Euro
