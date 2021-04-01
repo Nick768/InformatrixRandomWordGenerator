@@ -9,7 +9,7 @@ VL02 Soziale Kognition: Monitoring-/Operator-Prozesse (Wegner 1994);; Zur Unterd
 VL03 Soziale Perzeption: Internale/Externale Attribution (Heider 1958);; Menschen haben eine Vorliebe für die internale Attribution ("wissenschaftlicher Laie")
 VL03 Soziale Perzeption: Konsensus/Distinktheit/Konsistenz;; Kovariationsprinzip nach Kelly ("Meisterdetektiv")
 VL03 Soziale Perzeption: Fundamentaler Attributionsfehler (Ross);; Tendenz Verhalten anderer zu erklären: Persönlichkeit > sozialer Einfluss;;Hilfe5;;Hilfe6
-VL03 Soziale Perzeption: zentrale/periphere eigenschaften;; intelligent - geschickt - WARMHERZIG/KALTHERZIG - entschlossen - fleißig
+VL03 Soziale Perzeption: zentrale/periphere Eigenschaften;; intelligent - geschickt - WARMHERZIG/KALTHERZIG - entschlossen - fleißig
 
 :: VORLESUNG 4
 VL04 Stereotype/Vorurteile: Voraus bestehen Vorurteile? ;; = Affektiv (Vorurteil)/ Kognitiv (Stereotyp)/ Verhalten (Diskriminierung)
@@ -19,28 +19,40 @@ VL04 Stereotype/Vorurteile: Wie kann der Abbau von Stereotypen/Vorurteilen durch
 VL04 Stereotype/Vorurteile: Was für Vorteile hat eine "Jigsaw-Klasse"?;; Grenzen zw. Eigen-/Fremdgruppe werden niedergerissen + Dissonanzreduktion
 
 :: VORLESUNG 5
-VL05 Interpersonale Attraktion: Welche Bedingungen gibt es für gegenseitige Anziehung?;; Nähe(Vertrautheit/Mere exposure) - Ähnlichkeit - Reziproke Zuneigung - Attraktivität - Emotion - Sozialer Austausch
+VL05 Interpersonale Attraktion: Welche Effekte fördern gegenseitige Anziehung?;; Nähe(Vertrautheit/Mere exposure) - Ähnlichkeit - Reziproke Zuneigung - Attraktivität - positive Emotionen - Sozialer Austausch
 VL05 Interpersonale Attraktion: Bindungsstile;; sicherer/vermeidender/ängstlich-ambivalenter
-VL05 Interpersonale Attraktion:
-VL05 Interpersonale Attraktion:
+VL05 Interpersonale Attraktion: need to belong (Baumeister & Leary, 1995);; Wir sind sozialsten aller Tiere + haben starkes Bedürfnis, zu jemandem zu gehören;; "Beziehungen zu anderen steht an der Spitze, dessen was uns glücklich macht" (Berscheid 1985)
+VL05 Interpersonale Attraktion: "Laughing-Box" (Byrne et al. 1975);; Lachen als gemeinsames Erlebnis(positive Emotionen) = Person wird für attraktiver empfunden
+VL05 Interpersonale Attraktion: Welches ist häufigerv"Gleich und gleich gesellt sich gern" oder "Gegensätze ziehen sich an"?;; "Gleich und gleich...", da: Effekt der Ähnlichkeit + Nähe
 
 :: VORLESUNG 6
-VL06 Einstellung: Je stärker die Einstellung - desto...(Fazio 2000);; ...restistnter gegebüber Veränderung + konsistenter ist Einstll. mit Verhalten
+VL06 Einstellung: Je stärker die Einstellung - desto...(Fazio 2000);; ...restistenter gegebüber Veränderung + konsistenter ist Einstll. mit Verhalten
 VL06 Einstellung: Balancetheorie (Heider 1946);; bei nicht balancierter Einstellung = Einstellungsänderung
-VL06 Einstellung: Kognitive Dissonanztheorie (Festinger 1997);; Einstellung/Verhalten wird so verändert - dass beide konsistent sind
+VL06 Einstellung: Kognitive Dissonanztheorie (Festinger 1997);; Einstellung/Verhalten wird so verändert, dass beide konsistent sind
 VL06 Einstellung: Persuasive Kommunikation: Man ist überzeugend wenn...:(Bezogen auf Yale-Studie);; Bsp.: Sender = fachkundig + attraktiv;; Mitteilung = zweiseitige Botschaft - primacy Effect - recency effect;; Zuhörerschaft = abgelenkt - niedrige Intelligenz - mit durchschnittlichem Selbstwert
 
 :: VORLESUNG 7
-VL07 Selbst:
+VL07 Selbst/-rechtfertigung/-wert: Emotionale Funktion des Selbst;; Steuerung emotionaler Reatkionen beim Vergleich von tatsächlichem-, Ideal-, Soll-Selbst
+VL07 Selbst/-rechtfertigung/-wert: Selbst ist wie ein Muskel - Baumeister et al. 2000,, Selbst wird beeinfluss von: Müdigkeit, regelmäßiges Training(Kräftigung), Verbraucht Energie bei Selbstkontrolle ("Versuch bei Komödie nicht zu lachen!")
+VL07 Selbst/-rechtfertigung/-wert: Was ist der Unterschied zw. unabhängiger- und interdependente Selbstsicht?;; Unabhängige= man stütz sich auf die eigenen Gedanken,Gefühle, Handlungen;; interdependetent= definiert sich selbst auf Basis der Gefühle, Gedankne, Hanldungen anderer Menschen(vgl. kollektivistische Kulturen):
+VL07 Selbst/-rechtfertigung/-wert: Studie-"Hängebrücke" (Dutton & Aron 1974);; Zwei-Faktoren-Theorie (Schachter 1964) - 2 Widerstreitende Auffassungen - Wir beobachten unser Verhalten direkt und begründen damit unseren Zustand oder...;; ...wir beobachten erst unseren physiologischen Erregungszustand und suchen dann nach situationsbedingte Infos, um Ursache des Verhaltens zu finden
+VL07 Selbst/-rechtfertigung/-wert: Effekt der Überrechtfertigung (Deci et al. 1999);; In der Selbstwarhnehmung werden extrinsische Gründe überschätzt und intrinsische unterschätzt;; Bsp.: Tochter soll besser Klavierspielen lernen und bekommt jedes mal 1Euro
+VL07 Selbst/-rechtfertigung/-wert: Selbstwahrnehmungstheorie nach Bem 1972;; Wir beobachten unser Verhalten und nehmen Kausalattribution vor;; Je mehr wahlfreiheit, desto besser kann man Neigungen erkennen (vgl. Personenwahrnehmungstheorie/Fremdwahrnehmung - Wahlfreheit Jones&David 1965)
 
 :: VORLESUNG 8
-VL08 Konformität:
+VL08 Konformität: Informtiver vs normativer sozialer Einfluss;; InformativerSozE: Andere Menschen werden als Informationsquelle betrachtet, an die die eigene Handlung angepasst wird ("autokinetisches Phänomen"/Lichtpunkt – Sherifs 1936);; NormativerSozE: Man passt sich den Normen der Gruppe an (Beurteilunug von Linien im Hörsaal - Asch, 1951, 1956)
+VL08 Konformität: Ideosynkrasiekredit (Hollander 1960);; Man verdient Recht auf gelegentliches Abweichen, wenn man sich meistens dem normativen Einfluss unterwirft
+VL08 Konformität: Allgemeine Bedingungen, dass man sich stark oder weniger stark von Gruppe beeinflussen lässt und konform geht (Latane 1981);; Stärke, Unmittelbarkeit, Anzahl der Personen, Selbstwert
+VL08 Konformität: Warum folgt man Autoritäten (Experiment: Milgram 1963, 1974, 1974);; Erklärung: Informativer sozialer Einfluss/Normativer Sozialer Einfluss, Den falschen Normen folgen, Selbstrechtfertigung, Aggression?
 
 :: VORLESUNG 9
-VL09 Gruppenprozesse:
+VL09 Gruppenprozesse: Social fascilitation/Social Loafing bzw. Schaben vs Tauziehen;; Einfache Aufgaben werden in Gegenwart v. anderen schneller gelöst = Leistungssteigerung aber komplexere werden gehemmt;;
+VL09 Gruppenprozesse: Prozessverluste - Gruppenentscheidungen besser als Einzelentscheidungen?;; generell ja, aber... ;; ... Tendenz der einzelnen Gruppenmitglieder sich nur über gemeinsames Wissen auszutauschen + Groupthink(Bsp. Spaceshuttle-Challenger Fehlentscheidung)
+VL09 Gruppenprozesse: Gruppenpolarisierung - Gruppenentscheidungen besser als Einzelentscheidungen?;; generell ja, aber...;; Gruppenentschiedungen waren extremer/risikofreudiger "risky-shift"
+VL09 Gruppenprozesse: Vorteile von Gruppen;; Soziale Normen;; Soziale Rolle;; Gruppenkohäsion
 
 :: VORLESUNG 10
-VL10 Prosziales Verhalten:
-
-:: VORLESUNG 11
-VL11 Übertragung SozPsy / auf medienpsychol. Phänomene:
+VL10 Prosziales Verhalten: Theorie des sozialen Austausches (Homans 1961);; Gegenteil von Altruismus (Hilft man also nur aus Eigennutz?!);; Helfen = Investition in die Zukunft, Helfen nur, um Belohnung/maximieren Kosten/minimieren
+VL10 Prosziales Verhalten: Carol hat sich ihr Bein gebrochen :( Studie von Toi & Batson 1982;; Grundlage der Studie = Batsons-These: "Wenn Mitgefühl nicht vorhanden ist, dann entscheiden die Kosten darüber, ob ich helfe oder nicht.";; 1.Experimentalgruppe mit Empathieinstruktion und 2.Kontrollgruppe ohne;; These wurde bestätigt! Geholfen wurde,wenn: 1.Emapthie vorhanden war. 2.Wenn keine Empathie vorhanden war bei wenigen Kosten
+VL10 Prosziales Verhalten: Alternative Gründe, warum man hilft (Baron et al. 2006) ;; Empathy-Altruism, Negativ-State-Relief, Empathy-Joy, Genetic Determinism
+VL10 Prosziales Verhalten: Situative Determinanten, die beeinflussen, ob man hilft;; Stimmung, Umfeld, Zuschauer/Bystander, Art der Beziehung
